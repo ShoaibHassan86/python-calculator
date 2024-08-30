@@ -1,0 +1,15 @@
+{
+    "name": "Python Calculator",
+    "dockerFile": "../Dockerfile",
+    "context": "..",
+    "workspaceFolder": "/workspace",
+    "runArgs": ["--rm", "-p", "8888:8888"],
+    "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker"
+    ],
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python3"
+    },
+    "postCreateCommand": "pip install --upgrade pip"
+}
